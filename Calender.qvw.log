@@ -1,73 +1,73 @@
-﻿2018-02-02 12:18:35      Execution started.
-2018-02-02 12:18:35      QlikView Desktop Version      12.20.20200+2017-12-12 14:32:02+2a4b819
-2018-02-02 12:18:35      CPU Target                    x64
-2018-02-02 12:18:35      Operating System              Windows 10 Enterprise  (64 bit edition)
-2018-02-02 12:18:35      Wow64 mode                    Not using Wow64
-2018-02-02 12:18:35      Language                      0409 English (United States) English
-2018-02-02 12:18:35      Country                       1 United States United States
-2018-02-02 12:18:35      MDAC Version                  6.3.9600.16384
-2018-02-02 12:18:35      MDAC Full Install Version     6.3.9600.16384
-2018-02-02 12:18:35      PreferredCompression          2
-2018-02-02 12:18:35      EnableParallelReload          1
-2018-02-02 12:18:35      ParallelizeQvdLoads           1
-2018-02-02 12:18:35      AutoSaveAfterReload           0
-2018-02-02 12:18:35      BackupBeforeReload            1
-2018-02-02 12:18:35      EnableFlushLog                0
-2018-02-02 12:18:35      SaveInfoWhenSavingFile        0
-2018-02-02 12:18:35      UserLogfileCharset            65001
-2018-02-02 12:18:35      OdbcLoginTimeout              -1
-2018-02-02 12:18:35      OdbcConnectionTimeout         -1
-2018-02-02 12:18:35      LongestPossibleLine           1048576
-2018-02-02 12:18:35      MaxCoreMask                   -1
-2018-02-02 12:18:35      ScriptWantsDbWrite            false
-2018-02-02 12:18:35      ScriptWantsExe                false
-2018-02-02 12:18:35      LogFile CodePage Used:        65001
-2018-02-02 12:18:35      UseMemoryFillPattern          1
-2018-02-02 12:18:35      ScriptMode                    Legacy (gives greater system access) (aka qv11 mode)
-2018-02-02 12:18:35      SequentialThreadCount         155
-2018-02-02 12:18:35      NumberOfCores (effective)     4
-2018-02-02 12:18:35      ReloadCodebase                Bnf
-2018-02-02 12:18:35      Reload Executed By            DIR\sravan.kumar.vennu
-2018-02-02 12:18:35      Process Executing             QlikView Desktop
-2018-02-02 12:18:35      Process ID                    4372
-2018-02-02 12:18:35 0002 SET ThousandSep=','
-2018-02-02 12:18:35 0003 SET DecimalSep='.'
-2018-02-02 12:18:35 0004 SET MoneyThousandSep=','
-2018-02-02 12:18:35 0005 SET MoneyDecimalSep='.'
-2018-02-02 12:18:35 0006 SET MoneyFormat='$#,##0.00;($#,##0.00)'
-2018-02-02 12:18:35 0007 SET TimeFormat='h:mm:ss TT'
-2018-02-02 12:18:35 0008 SET DateFormat='M/D/YYYY'
-2018-02-02 12:18:35 0009 SET TimestampFormat='M/D/YYYY h:mm:ss[.fff] TT'
-2018-02-02 12:18:35 0010 SET FirstWeekDay=6
-2018-02-02 12:18:35 0011 SET BrokenWeeks=1
-2018-02-02 12:18:35 0012 SET ReferenceDay=0
-2018-02-02 12:18:35 0013 SET FirstMonthOfYear=1
-2018-02-02 12:18:35 0014 SET CollationLocale='en-US'
-2018-02-02 12:18:35 0015 SET MonthNames='Jan;Feb;Mar;Apr;May;Jun;Jul;Aug;Sep;Oct;Nov;Dec'
-2018-02-02 12:18:35 0016 SET LongMonthNames='January;February;March;April;May;June;July;August;September;October;November;December'
-2018-02-02 12:18:35 0017 SET DayNames='Mon;Tue;Wed;Thu;Fri;Sat;Sun'
-2018-02-02 12:18:35 0018 SET LongDayNames='Monday;Tuesday;Wednesday;Thursday;Friday;Saturday;Sunday'
-2018-02-02 12:18:35 0020 LET vMin=num(MakeDate(2016, 01, 01))
-2018-02-02 12:18:35 0021 LET vMax=num(Today())
-2018-02-02 12:18:35 0023 Time:
-2018-02-02 12:18:35 0024 LOAD
-2018-02-02 12:18:35 0025 Date(42370+RowNo()-1, 'DD/MM/YYYY') as Date
-2018-02-02 12:18:35 0026 AutoGenerate 1
-2018-02-02 12:18:35 0027 While 42370+RowNo()<=43133
-2018-02-02 12:18:35      	1 fields found: Date, 
-2018-02-02 12:18:35      764 lines fetched
-2018-02-02 12:18:35 0029 Date:
-2018-02-02 12:18:35 0030 LOAD Date,
-2018-02-02 12:18:35 0031 	 Day(Date) as Day,
-2018-02-02 12:18:35 0032 	 Month(Date) as Month,
-2018-02-02 12:18:35 0033 	 Year(Date) as Year,
-2018-02-02 12:18:35 0034 	 MonthName(Date) as Mont_Year,
-2018-02-02 12:18:35 0035 	 
-2018-02-02 12:18:35 0036 	 
-2018-02-02 12:18:35 0037 	 
-2018-02-02 12:18:35 0038 	 If(Date <= Today() And Date >=SetDateYear(Today(), Year(Today())-1), 1, 0) As Last12Months	
-2018-02-02 12:18:35 0039 	 Resident Time
-2018-02-02 12:18:35      	6 fields found: Date, Day, Month, Year, Mont_Year, Last12Months, 
-2018-02-02 12:18:35      764 lines fetched
-2018-02-02 12:18:35 0041 DROP Table Time
-2018-02-02 12:18:35      Execution finished.
+﻿2018-02-02 12:32:50      Execution started.
+2018-02-02 12:32:50      QlikView Desktop Version      12.20.20200+2017-12-12 14:32:02+2a4b819
+2018-02-02 12:32:50      CPU Target                    x64
+2018-02-02 12:32:50      Operating System              Windows 10 Enterprise  (64 bit edition)
+2018-02-02 12:32:50      Wow64 mode                    Not using Wow64
+2018-02-02 12:32:50      Language                      0409 English (United States) English
+2018-02-02 12:32:50      Country                       1 United States United States
+2018-02-02 12:32:50      MDAC Version                  6.3.9600.16384
+2018-02-02 12:32:50      MDAC Full Install Version     6.3.9600.16384
+2018-02-02 12:32:50      PreferredCompression          2
+2018-02-02 12:32:50      EnableParallelReload          1
+2018-02-02 12:32:50      ParallelizeQvdLoads           1
+2018-02-02 12:32:50      AutoSaveAfterReload           0
+2018-02-02 12:32:50      BackupBeforeReload            1
+2018-02-02 12:32:50      EnableFlushLog                0
+2018-02-02 12:32:50      SaveInfoWhenSavingFile        0
+2018-02-02 12:32:50      UserLogfileCharset            65001
+2018-02-02 12:32:50      OdbcLoginTimeout              -1
+2018-02-02 12:32:50      OdbcConnectionTimeout         -1
+2018-02-02 12:32:50      LongestPossibleLine           1048576
+2018-02-02 12:32:50      MaxCoreMask                   -1
+2018-02-02 12:32:50      ScriptWantsDbWrite            false
+2018-02-02 12:32:50      ScriptWantsExe                false
+2018-02-02 12:32:50      LogFile CodePage Used:        65001
+2018-02-02 12:32:50      UseMemoryFillPattern          1
+2018-02-02 12:32:50      ScriptMode                    Legacy (gives greater system access) (aka qv11 mode)
+2018-02-02 12:32:50      SequentialThreadCount         159
+2018-02-02 12:32:50      NumberOfCores (effective)     4
+2018-02-02 12:32:50      ReloadCodebase                Bnf
+2018-02-02 12:32:51      Reload Executed By            DIR\sravan.kumar.vennu
+2018-02-02 12:32:51      Process Executing             QlikView Desktop
+2018-02-02 12:32:51      Process ID                    4372
+2018-02-02 12:32:51 0002 SET ThousandSep=','
+2018-02-02 12:32:51 0003 SET DecimalSep='.'
+2018-02-02 12:32:51 0004 SET MoneyThousandSep=','
+2018-02-02 12:32:51 0005 SET MoneyDecimalSep='.'
+2018-02-02 12:32:51 0006 SET MoneyFormat='$#,##0.00;($#,##0.00)'
+2018-02-02 12:32:51 0007 SET TimeFormat='h:mm:ss TT'
+2018-02-02 12:32:51 0008 SET DateFormat='M/D/YYYY'
+2018-02-02 12:32:51 0009 SET TimestampFormat='M/D/YYYY h:mm:ss[.fff] TT'
+2018-02-02 12:32:51 0010 SET FirstWeekDay=6
+2018-02-02 12:32:51 0011 SET BrokenWeeks=1
+2018-02-02 12:32:51 0012 SET ReferenceDay=0
+2018-02-02 12:32:51 0013 SET FirstMonthOfYear=1
+2018-02-02 12:32:51 0014 SET CollationLocale='en-US'
+2018-02-02 12:32:51 0015 SET MonthNames='Jan;Feb;Mar;Apr;May;Jun;Jul;Aug;Sep;Oct;Nov;Dec'
+2018-02-02 12:32:51 0016 SET LongMonthNames='January;February;March;April;May;June;July;August;September;October;November;December'
+2018-02-02 12:32:51 0017 SET DayNames='Mon;Tue;Wed;Thu;Fri;Sat;Sun'
+2018-02-02 12:32:51 0018 SET LongDayNames='Monday;Tuesday;Wednesday;Thursday;Friday;Saturday;Sunday'
+2018-02-02 12:32:51 0020 LET vMin=num(MakeDate(2016, 01, 01))
+2018-02-02 12:32:51 0021 LET vMax=num(Today())
+2018-02-02 12:32:51 0023 Time:
+2018-02-02 12:32:51 0024 LOAD
+2018-02-02 12:32:51 0025 Date(42370+RowNo()-1, 'DD/MM/YYYY') as Date
+2018-02-02 12:32:51 0026 AutoGenerate 1
+2018-02-02 12:32:51 0027 While 42370+RowNo()<=43133
+2018-02-02 12:32:51      	1 fields found: Date, 
+2018-02-02 12:32:51      764 lines fetched
+2018-02-02 12:32:51 0029 Date:
+2018-02-02 12:32:51 0030 LOAD Date,
+2018-02-02 12:32:51 0031 	 Day(Date) as Day,
+2018-02-02 12:32:51 0032 	 Month(Date) as Month,
+2018-02-02 12:32:51 0033 	 Year(Date) as Year,
+2018-02-02 12:32:51 0034 	 MonthName(Date) as Mont_Year,
+2018-02-02 12:32:51 0035 	 'Q'&Ceil(Month(Date)/3) as Quarter,
+2018-02-02 12:32:51 0036 	 
+2018-02-02 12:32:51 0037 	 AutoNumber(MonthName(Date)) as Mont_Year_Num,
+2018-02-02 12:32:51 0038 	 If(Date <= Today() And Date >=SetDateYear(Today(), Year(Today())-1), 1, 0) As Last12Months	
+2018-02-02 12:32:51 0039 	 Resident Time
+2018-02-02 12:32:51      	8 fields found: Date, Day, Month, Year, Mont_Year, Quarter, Mont_Year_Num, Last12Months, 
+2018-02-02 12:32:51      764 lines fetched
+2018-02-02 12:32:51 0041 DROP Table Time
+2018-02-02 12:32:51      Execution finished.
